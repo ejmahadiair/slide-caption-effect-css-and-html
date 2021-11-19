@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Hover Effect Slid Caption</title>
+    <style>
+        .box{
+            width: 400px;
+            height: 300px;
+            margin: 150px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .box img{
+            width: 100%;
+            height: 100%;
+        }
+        .box .box-contant{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: -100%;
+            left: 0;
+            background: rgba(17, 17, 17,0.7);
+            text-align: center;
+            color: #fff;
+            transition: all 1s ease-in-out;
+        }
+        .box:hover .box-contant{
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="ej.jpg" alt="Ej">
+        <div class="box-contant">
+            <h1>Web Design</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione fugiat voluptates, reprehenderit ab dolores dolor.</p>
+        </div>
+    </div>
+</body>
+</html>
